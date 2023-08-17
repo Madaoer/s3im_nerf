@@ -157,43 +157,10 @@
 
         <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Results on real-world captured data</h4>
-<div id="my_videos_demo" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="3000">
-      <video class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/171703052-1cdc1fdc-65c8-45f8-b10a-ffc591dd2f47.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="6000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174282571-07c1e4d2-b101-4108-b913-a642c1c0db9f.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/171703143-e2cb153e-7a75-4a38-b596-47cccbf26f56.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="6000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174282530-1fc55da3-2d6c-4689-aae6-71508073fa50.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/171703172-338dc031-0a09-492d-8c30-ab5cb5af76f3.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="6000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174282592-d1392510-96d2-44df-86eb-d2228a8bc469.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="3000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/171703628-898fffb5-d929-4115-824f-197569aa16dc.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="6000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174282633-f0a29688-d38b-4909-ac5d-153f436e6f1c.mp4" type="video/mp4" /></video>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#my_videos_demo" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#my_videos_demo" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
+                <h4 class="sec_title">Abstract</h4>
+                <p>
+                    Recently, Neural Radiance Field (NeRF) has shown great success in rendering novel-view images of a given scene by learning an implicit representation with only posed RGB images. NeRF and relevant neural field methods (e.g., neural surface representation) typically optimize a point-wise loss and make point-wise predictions, where one data point corresponds to one pixel. Unfortunately, this line of research failed to use the collective supervision of distant pixels, although it is known that pixels in an image or scene can provide rich structural information. To the best of our knowledge, we are the first to design a nonlocal multiplex training paradigm for NeRF and relevant neural field methods via a novel Stochastic Structural SIMilarity (S3IM) loss that processes multiple data points as a whole set instead of process multiple inputs independently. Our extensive experiments demonstrate the unreasonable effectiveness of S3IM in improving NeRF and neural surface representation for nearly free. The improvements of quality metrics can be particularly significant for those relatively difficult tasks: e.g., the test MSE loss unexpectedly drops by more than 90% for TensoRF and DVGO over eight novel view synthesis tasks; a 198% F-score gain and a 64% Chamfer L_1 distance reduction for NeuS over eight surface reconstruction tasks. Moreover, S3IM is consistently robust even with sparse inputs, corrupted images, and dynamic scenes.
+                </p>
             </div>
         </div>
 
