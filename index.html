@@ -126,35 +126,6 @@
             </div>
         </div>
 
-
-
-        <div class="row mb-3 pt-2">
-            <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Results on custom casual capturing</h4>
-                <p>A <a href="./tutor_forward_facing.html">short guide</a> to support custom forward-facing capturing and fly-through video rendering.</p>
-<div id="my_casual_demo" class="carousel slide" data-ride="carousel">
-  <div class="carousel-inner">
-    <div class="carousel-item active" data-interval="8000">
-      <video class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271503-9d05a469-0acb-40bd-ab0b-6de45fb123fa.mp4" type="video/mp4" /></video>
-    </div>
-    <div class="carousel-item" data-interval="8000">
-      <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271488-0d301dcd-5a26-4813-9872-d82736fc62e0.mp4" type="video/mp4" /></video>
-    </div>
-  </div>
-  <a class="carousel-control-prev" href="#my_casual_demo" role="button" data-slide="prev">
-    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-    <span class="sr-only">Previous</span>
-  </a>
-  <a class="carousel-control-next" href="#my_casual_demo" role="button" data-slide="next">
-    <span class="carousel-control-next-icon" aria-hidden="true"></span>
-    <span class="sr-only">Next</span>
-  </a>
-</div>
-            </div>
-        </div>
-
-
-
         <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
                 <h4 class="sec_title">Abstract</h4>
@@ -164,142 +135,50 @@
             </div>
         </div>
 
-        <div class="row mb-3 pt-2" id="my_features">
+        <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Features</h4>
-                <ul>
-                    <li>Speedup NeRF by replacing the MLP with the voxel grid.</li>
-                    <li>Simple scene representation:</li>
-                    <ul class="detail">
-                        <li class="row"><div class="col-sm-4 pr-0">Volume densities:</div><div class="col-sm-8 pr-0">dense voxel grid (3D).</div></li>
-                        <li class="row"><div class="col-sm-4 pr-0">View-dependent colors:</div><div class="col-sm-8 pr-0">dense feature grid (4D) + shallow MLP.</div></li>
-                    </ul>
-                    <li>Pytorch implementation.</li>
-                    <li><sup>&dagger;</sup>Pytorch cuda extention built just-in-time for <b>another 2--3x speedup</b>.</li>
-                    <li><sup>&dagger;</sup>O(N) realization for the distortion loss proposed by <a href="https://jonbarron.info/mipnerf360/">mip-nerf 360</a>.</li>
-                    <ul>
-                        <li>The loss improves our training time and quality.</li>
-                        <li>We have released a self-contained pytorch package: <a href="https://github.com/sunset1995/torch_efficient_distloss">torch_efficient_distloss</a>.</li>
-                        <li>Consider a batch of 8192 rays X 256 points.</li>
-                        <ul>
-                            <li>GPU memory consumption: 6192MB => 96MB.</li>
-                            <li>Run times for 100 iters: 20 sec => 0.2sec.</li>
-                        </ul>
-                    </ul>
-                    <li>Supported datasets:</li>
-                    <ul class="detail">
-                        <li class="row"><div class="col-sm-4 pr-0">Bounded inward-facing:</div><div class="col-sm-8 pr-0"><a href="https://drive.google.com/drive/folders/128yBriW1IG_3NJ5Rp7APSTZsJqdJdfc1">NeRF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/Synthetic_NSVF.zip">NSVF</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/BlendedMVS.zip">BlendedMVS</a>, <a href="https://dl.fbaipublicfiles.com/nsvf/dataset/TanksAndTemple.zip">T&T (masked)</a>, <a href="https://drive.google.com/open?id=1ScsRlnzy9Bd_n-xw83SP-0t548v63mPH">DeepVoxels</a>.</div></li>
-                        <li class="row"><div class="col-sm-4 pr-0"><sup>&dagger;</sup>Unbounded inward-facing:</div><div class="col-sm-8"><a href="https://drive.google.com/file/d/11KRfN91W1AxAW6lOFs4EeYDbeoQZCi87/view?usp=sharing">T&T</a>, <a href="https://drive.google.com/file/d/1gsjDjkbTh4GAR9fFqlIDZ__qR9NYTURQ/view?usp=sharing">LF</a>, <a href="https://jonbarron.info/mipnerf360/">mip-NeRF360</a>.</div></li>
-                        <li class="row"><div class="col-sm-4 pr-0"><sup>&dagger;</sup>Foward-facing:</div><div class="col-sm-8 pr-0"><a href="https://drive.google.com/drive/folders/14boI-o5hGO9srnWaaogTU5_ji7wkX2S7">LLFF</a>.</div></li>
-                    </ul>
-                </ul>
-                <p><sup>&dagger; means new stuff after publication.</sup></p>
+                <h4 class="sec_title">Results on Tanks and Temple Truck sparse view</h4>
+                    <div id="my_casual_demo" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="8000">
+                          <video class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271503-9d05a469-0acb-40bd-ab0b-6de45fb123fa.mp4" type="video/mp4" /></video>
+                        </div>
+                        <div class="carousel-item" data-interval="8000">
+                          <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271488-0d301dcd-5a26-4813-9872-d82736fc62e0.mp4" type="video/mp4" /></video>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#my_casual_demo" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#my_casual_demo" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
+                    </div>
             </div>
         </div>
-
-        <div class="row mb-3 pt-2" id="my_motivation">
+        <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Motivation</h4>
-                <ul>
-                    <li>NeRF</li>
-                    <ul>
-                        <li>😀 Excellent quality & flexibility.</li>
-                        <li>😕 Very slow due to MLP queries.</li>
-                    </ul>
-                    <li>Replacing the MLP with voxel grid.</li>
-                    <ul>
-                        <li>😀 Previous works<sup>[1,2,3]</sup> have shown a large inference time speedup with good quality.</li>
-                        <li>😕 Limited to inference time. Pre-trained MLP is required.</li>
-                    </ul>
-                    <li>🤔 How to train voxel grid directly from scratch?</li>
-                </ul>
-                <ul class="list-unstyled">
-                    <li><sup><a href="https://alexyu.net/plenoctrees/">[1]</a> PlenOctrees for Real-time Rendering of Neural Radiance Fields, Yu et al.</sup></li>
-                    <li><sup><a href="https://microsoft.github.io/FastNeRF/">[2]</a> FastNeRF: High-Fidelity Neural Rendering at 200FPS, Garbin et al.</sup></li>
-                    <li><sup><a href="https://phog.github.io/snerg/">[3]</a> Baking Neural Radiance Fields for Real-Time View Synthesis, Hedman et al.</sup></li>
-                </ul>
-            </div>
-        </div>
-
-        <div class="row mb-3 pt-2" id="my_postact">
-            <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Post-activation</h4>
-
-                <b>Observation.</b>
-                To produce sharp surface, we have to activate density into alpha <u>after</u> interpolation.
-                <div class="row justify-content-center">
-                    <div class="col-8">
-                        <img src="img/post_act.png" class="img-responsive">
+                <h4 class="sec_title">Results on Replica dataset</h4>
+                    <div id="my_casual_demo" class="carousel slide" data-ride="carousel">
+                      <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="8000">
+                          <video class="img-fluid" autoplay loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271503-9d05a469-0acb-40bd-ab0b-6de45fb123fa.mp4" type="video/mp4" /></video>
+                        </div>
+                        <div class="carousel-item" data-interval="8000">
+                          <video class="img-fluid" loop muted controls><source src="https://user-images.githubusercontent.com/2712505/174271488-0d301dcd-5a26-4813-9872-d82736fc62e0.mp4" type="video/mp4" /></video>
+                        </div>
+                      </div>
+                      <a class="carousel-control-prev" href="#my_casual_demo" role="button" data-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Previous</span>
+                      </a>
+                      <a class="carousel-control-next" href="#my_casual_demo" role="button" data-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="sr-only">Next</span>
+                      </a>
                     </div>
-                </div>
-                <p></p>
-
-                <p><b>Proof.</b> Post-activation can be arbitrarily close to a surface beyond linear. Detail in paper.</p>
-                <b>Toy example 1.</b> Fitting a surface with a single 2D grid cell.
-                <div class="row justify-content-center">
-                    <div class="col-6">
-                        <img src="img/post_toy1.png" class="img-responsive">
-                    </div>
-                </div>
-                <p></p>
-
-                <b>Toy example 2.</b> Fitting a binary (occupancy) image with a 2D grid.
-                <div class="row justify-content-center">
-                    <div class="col-9">
-                        <img src="img/post_toy2.png" class="img-responsive">
-                    </div>
-                </div>
-                <p></p>
-
-                <p>
-                    <b>Ablation study.</b> Up to 2.88 PSNR difference for novel-view synthesis.
-                </p>
-            </div>
-        </div>
-
-        <div class="row mb-3 pt-2" id="my_init">
-            <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Low-density initialization</h4>
-                <p>
-                    <b>Observation.</b>
-                    The initial alpha values (activated from the volume densities) should be close to 0.
-                    We introduce a hyperparameter <code>alpha-init</code> to control it.
-                </p>
-
-                <b>Ablation study.</b>
-                The <code>alpha-init</code> should be small enough to achieve good quality and avoid <span style="color: rgb(255, 150, 141); font-weight: 900;">floater</span>.
-                <div class="row justify-content-center">
-                    <div class="col-9">
-                        <img src="img/low_density.png" class="img-responsive">
-                    </div>
-                </div>
-                <p></p>
-
-                <p class="text-justify">
-                    <b>Caveat.</b>
-                    We empirically find that the qualities and the training times are sensitive to the <code>alpha-init</code>. We set <code>alpha-init</code> to 3 different values for bounded, unbounded inward-facing, and forward-facining datasets respectively. You may want to try a few different values for new datasets.
-                </p>
-
-                <p class="text-justify">
-                    <b>🤔</b>
-                    It seems that the explicit (grid-based) representation needs careful regularizations, while the implicit (MLP network) doesn't.
-                    We still don't know the root cause for this empirical finding at this moment.
-                </p>
-            </div>
-        </div>
-
-        <div class="row mb-3" id="related_work">
-            <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Advanced Data Structure</h4>
-                Some concurrent works have used a more advanced data structure:
-                <ul>
-                    <li>
-                        Sparse grid — Plenoxels: Radiance Fields without Neural Networks. <a href="https://alexyu.net/plenoxels/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
-                    </li>
-                    <li>Hash — Instant Neural Graphics Primitives with a Multiresolution Hash Encoding. <a href="https://nvlabs.github.io/instant-ngp/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                    <li>Factorized components — TensoRF: Tensorial Radiance Fields. <a href="https://apchenstu.github.io/TensoRF/"><i class="fa-solid fa-arrow-up-right-from-square"></i></a></li>
-                </ul>
-                <p>You will need them for scaling to a higher grid resolution. But we believe <b>our simplest dense grid could still be your good starting point</b> if you have other challenging problems to deal with.</p>
             </div>
         </div>
 
