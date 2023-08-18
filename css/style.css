@@ -1,0 +1,260 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 300;
+}
+
+h2,
+h3,
+h4,
+h5,
+h6,
+.form-control,
+small {
+    font-weight: 300;
+}
+
+.detail {
+    padding-left: 1em;
+}
+
+.sec_title {
+    margin-left: -1em;
+}
+.sec_title::first-letter {
+    font-size: 1.5em;
+}
+
+.carousel-control-prev-icon {
+    background-color: black;
+    border-radius:  2px;
+}
+
+.carousel-control-next-icon {
+    background-color: black;
+    border-radius:  2px;
+}
+
+.carousel-caption h5 {
+    background-color: rgba(0,0,0,.3);
+}
+
+.carousel-item {
+    text-align: center;
+}
+
+#my_bibtex pre {
+    background-color: #eee;
+    padding: .5em;
+}
+
+#paper-title h3 small {
+    color: #777;
+    font-size: 0.7em
+}
+
+.container-lg>.row>img.img-responsive,
+.container-lg>.row>div>img.img-responsive {
+    padding: 1em 0
+}
+
+.row img.img-responsive {
+    width: 100%;
+}
+
+#authors .list-inline-item {
+    padding: 0.5em
+}
+
+.gif-label {
+    margin: 0.3em 0;
+    font-size: 0.7em;
+}
+
+.gif-label>div {
+    text-align: center;
+    padding: 0
+}
+
+#dynamic-teaser .gif-label {
+    margin: 0 -15px;
+}
+
+body>.container-lg>.row>div {
+    padding: 0 2em
+}
+
+body>.container-lg>.row>div.grey-container-lg {
+    background: #f2f2f2;
+    padding: 1.5em 2em
+}
+
+.row.eleven-col {
+    width: 109.0909090909%;
+    overflow: hidden
+}
+
+.row.ten-col {
+    width: 120%;
+    overflow: hidden
+}
+
+.row.eight-col {
+    width: 150%;
+    overflow: hidden
+}
+
+.io-arrow {
+    position: relative;
+    display: block;
+    text-align: center;
+}
+
+.io-arrow>svg {
+    position: absolute;
+    color: #555;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%)
+}
+
+#demo-warning {
+    display: none;
+    color: red;
+}
+
+
+.demo-card {
+    width: 100%;
+    height: 250px;
+    margin-bottom: 1em;
+    overflow: hidden;
+    cursor: pointer;
+}
+
+.demo-card h5 a {
+    text-decoration: none;
+    color: #000
+}
+
+.demo-card>img {
+    width: 100%;
+    height: 160px;
+    object-fit: contain;
+    padding: 1em;
+}
+
+.demo-card .card-body {
+    padding: 1em 1.5em;
+    background: #fafafa;
+}
+
+.fullwid-vid {
+    width: 100%
+}
+
+.fullwid-centered {
+    width: 100%;
+    text-align: center
+}
+
+.col-tight {
+    padding: 0
+}
+
+@media only screen and (max-width: 992px) {
+    #teaser-one .row>div>.row {
+        padding: 0 55px
+    }
+}
+
+@media only screen and (max-width: 768px) {
+    #teaser-one .row>div>.row {
+        padding: 0 75px
+    }
+}
+
+@media only screen and (max-width: 576px) {
+    #teaser-one .row>div>.row {
+        padding: 0 35px
+    }
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fCBc4EsA.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBxc4EsA.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fChc4EsA.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 300;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOlCnqEu92Fr1MmSU5fBBc4.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+/* greek-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7mxKOzY.woff2) format('woff2');
+    unicode-range: U+1F00-1FFF;
+}
+
+/* greek */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4WxKOzY.woff2) format('woff2');
+    unicode-range: U+0370-03FF;
+}
+
+/* latin-ext */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu7GxKOzY.woff2) format('woff2');
+    unicode-range: U+0100-024F, U+0259, U+1E00-1EFF, U+2020, U+20A0-20AB, U+20AD-20CF, U+2113, U+2C60-2C7F, U+A720-A7FF;
+}
+
+/* latin */
+@font-face {
+    font-family: 'Roboto';
+    font-style: normal;
+    font-weight: 400;
+    font-display: swap;
+    src: url(https://fonts.gstatic.com/s/roboto/v20/KFOmCnqEu92Fr1Mu4mxK.woff2) format('woff2');
+    unicode-range: U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
