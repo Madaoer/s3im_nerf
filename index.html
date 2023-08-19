@@ -51,7 +51,7 @@
             </h3>
         </div>
         <div class="row" id="authors">
-            <div class="mx-auto text-center">
+            <div class="mx-auto text-center" style="width:70%">
                 <ul class="list-inline mb-0">
                     <li class="list-inline-item">
                         Zeke Xie*
@@ -114,21 +114,6 @@
             </div>
         </div>
 
-        <div>
-            <div style="display:flex; flex-direction: column; justify-content: center;align-items: center;">
-                <video style="width:80%" class="fullwid-vid" autoplay loop muted controls>
-                    <source src="video/tensorf_replica_scan1_rgb.mp4" type="video/mp4">
-                </video>
-                <video style="width:80%"  class="fullwid-vid" autoplay loop muted controls>
-                    <source src="video/tensorf_replica_scan1_depth.mp4" type="video/mp4">
-                </video>
-                <div>
-                    <p>RGB and depth rendering results in Replica. Left: Standard Training (baseline); Right: Multiplex Training via S3IM (ours).</p>
-                </div>
-                <img src="figures/results_in_replica.png" class="img-responsive" style="width:60%" alt="quantitative results in replica">
-            </div>
-        </div>
-
         <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
                 <h4 class="sec_title">Abstract</h4>
@@ -140,7 +125,7 @@
 
         <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto">
-                <h4 class="sec_title">Results on Tanks and Temple Truck sparse view</h4>
+                <h4 class="sec_title">DVGO RGB and depth results w/o and with S3IM in Tanks and Temple Truck sparse view</h4>
                     <div style="display:flex; flex-direction: column; justify-content: center;align-items: center;">
                         <video style="width:120%" class="fullwid-vid" autoplay loop muted controls>
                             <source src="video/dvgo_sparse_truck_rgb.mp4" type="video/mp4">
@@ -152,43 +137,26 @@
             </div>
         </div>
         <div style="text-align:center">
-            <p>RGB and depth rendering results in Sparse Truck. Left: Standard Training (baseline); Right: Multiplex Training via S3IM (ours).</p>
+            <p>RGB and depth rendering results in Sparse Truck.Left: Standard Training (baseline); Right: Multiplex Training via S3IM (ours).</p>
         </div>
 
         <div class="row mb-3 pt-2">
             <div class="col-md-8 mx-auto" style="margin-bottom:-5px">
-                <h4 class="sec_title">Results on Replica dataset</h4>
+                <h4 class="sec_title">TensoRF RGB and depth results w/o and with S3IM in Replica Dataset</h4>
             </div>
         </div>
-        <div id="s3im_replica" class="carousel slide" data-ride="carousel" style="margin-left: 50px; margin-right:50px">
-          <div class="carousel-inner" style="text-align:center">
-            <div class="carousel-item active" data-interval="6000">
-              <video class="img-fluid" autoplay loop muted controls><source src="video/tensorf_scan3.mp4" type="video/mp4" /></video>
+        <div>
+            <div style="display:flex; flex-direction: column; justify-content: center;align-items: center;">
+                <video style="width:80%" class="fullwid-vid" autoplay loop muted controls>
+                    <source src="video/tensorf_replica_scan1_rgb.mp4" type="video/mp4">
+                </video>
+                <video style="width:80%"  class="fullwid-vid" autoplay loop muted controls>
+                    <source src="video/tensorf_replica_scan1_depth.mp4" type="video/mp4">
+                </video>
+                <div>
+                    <p>RGB and depth rendering results in Replica scan1.Left: Standard Training (baseline); Right: Multiplex Training via S3IM (ours).</p>
+                </div>
             </div>
-            <div class="carousel-item" data-interval="6000">
-              <video class="img-fluid" loop muted controls><source src="video/tensorf_scan4.mp4" type="video/mp4" /></video>
-            </div>
-            <div class="carousel-item" data-interval="6000">
-              <video class="img-fluid" loop muted controls><source src="video/tensorf_scan5.mp4" type="video/mp4" /></video>
-            </div>
-            <div class="carousel-item" data-interval="6000">
-              <video class="img-fluid" loop muted controls><source src="video/tensorf_scan6.mp4" type="video/mp4" /></video>
-            </div>
-            <div class="carousel-item" data-interval="6000">
-              <video class="img-fluid" loop muted controls><source src="video/tensorf_scan7.mp4" type="video/mp4" /></video>
-            </div>
-          </div>
-          <a class="carousel-control-prev" href="#s3im_replica" role="button" data-slide="prev" style="margin-left:50px">
-            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-            <span class="sr-only">Previous</span>
-          </a>
-          <a class="carousel-control-next" href="#s3im_replica" role="button" data-slide="next" style="margin-right:50px">
-            <span class="carousel-control-next-icon" aria-hidden="true"></span>
-            <span class="sr-only">Next</span>
-          </a>
-        </div>
-        <div style="text-align:center">
-            <p>RGB and depth rendering results in Replica. Left: Standard Training (baseline); Right: Multiplex Training via S3IM (ours).</p>
         </div>
         <div class="row mb-4" id="my_bibtex">
             <div class="col-md-8 mx-auto">
